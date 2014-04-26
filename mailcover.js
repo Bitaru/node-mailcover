@@ -51,6 +51,11 @@
      */
     mailcover.validate = function(email, callback){
 
+        var connect, req, config, messages;
+
+        config = this.config;
+        messages = this.messages;
+
         // NotBlank checker
         if(email.replace(' ', '') == ''){
             callback(messages.blank);
@@ -60,11 +65,6 @@
         if(!pattern.test(email)){
             callback(messages.blank);
         }else{
-
-            var connect, req, config, messages;
-
-            config = this.config;
-            messages = this.messages;
 
             connect = {
                 hostname: config.server+'.api.mailcover.com',
