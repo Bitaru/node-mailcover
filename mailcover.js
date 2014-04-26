@@ -85,12 +85,16 @@
 
                 response.on('end', function () {
                     var data = JSON.parse(str);
-                    if(config.blockDEA && data.is_disposable){
-                        callback(messages.dea);
-                    }
                     if(data.status == 'invalid'){
                         callback(messages[data.reason] || data.reason);
+                    }else{
+                        if(config.blockDEA && data.is_disposable){
+                            callback(messages.dea);
+                        }else{
+                            callback('success');
+                        }
                     }
+
                 });
             });
 

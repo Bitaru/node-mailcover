@@ -25,5 +25,8 @@
       "type": "MIT",
       "url": "http://github.com/bitatu/node-mailcover/raw/master/LICENSE"
     }
-  ]
+  ],
+  "dependencies": {},
+  "scripts": {},
+  "license": "MIT"
 }

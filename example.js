@@ -11,6 +11,6 @@ mailcover.config = {
     }
 
 };
-mailcover.validate('aiir.d22iir@gmail.com', function(response){
+mailcover.validate('example@mail.com', function(response){
     console.log(response);
 });
