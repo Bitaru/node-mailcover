@@ -1,4 +1,4 @@
-var mailcover = require('./mailcover');
+var mailcover = require('mailcover');
 
 mailcover.config = {
 

@@ -33,7 +33,6 @@
 
         pattern = /^([^@]+)@([^@]+)\.([^@]+)$/;
 
-    // Extend Validator isEmail function if exist
     mailcover = {};
 
     mailcover.messages = {
@@ -63,7 +62,7 @@
 
         // Simple syntax validation
         if(!pattern.test(email)){
-            return callback(messages.blank);
+            return callback(messages.incorrect);
         }else{
 
             connect = {
