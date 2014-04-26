@@ -1,0 +1,22 @@
+{ "name": "mailcover",
+    "description": "Email validation via Mailcover API",
+    "version": "0.10.0",
+    "homepage": "https://Mailcover.com/",
+    "keywords": [
+        "email", "validation", "dea"
+    ],
+    "author": "Mailcover <web@mailcover.com>",
+    "main": "mailcover.js",
+    "bugs": {
+        "url": "http://github.com/bitaru/node-mailcover/issues"
+    },
+    "repository": {
+        "type": "git",
+        "url": "http://github.com/bitaru/node-mailcover.git"
+    },
+    "engines": { "node" : ">= 0.8" },
+    "licenses": [
+        { "type": "MIT"
+            , "url": "http://github.com/bitatu/node-mailcover/raw/master/LICENSE" }
+    ]
+}
