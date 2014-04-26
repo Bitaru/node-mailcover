@@ -58,12 +58,12 @@
 
         // NotBlank checker
         if(email.replace(' ', '') == ''){
-            callback(messages.blank);
+            return callback(messages.blank);
         }
 
         // Simple syntax validation
         if(!pattern.test(email)){
-            callback(messages.blank);
+            return callback(messages.blank);
         }else{
 
             connect = {
@@ -86,12 +86,12 @@
                 response.on('end', function () {
                     var data = JSON.parse(str);
                     if(data.status == 'invalid'){
-                        callback(messages[data.reason] || data.reason);
+                        return callback(messages[data.reason] || data.reason);
                     }else{
                         if(config.blockDEA && data.is_disposable){
-                            callback(messages.dea);
+                            return callback(messages.dea);
                         }else{
-                            callback('success');
+                            return callback('success');
                         }
                     }
 
