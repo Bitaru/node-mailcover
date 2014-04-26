@@ -39,7 +39,8 @@
     mailcover.messages = {
 
         blank: 'Email must not be blank',
-        incorrect: 'Email is invalid'
+        incorrect: 'Email is invalid',
+        dea: 'Email is blacklisted'
 
     };
 
@@ -85,7 +86,7 @@
                 response.on('end', function () {
                     var data = JSON.parse(str);
                     if(config.blockDEA && data.is_disposable){
-                        callback(messages.incorrect);
+                        callback(messages.dea);
                     }
                     if(data.status == 'invalid'){
                         callback(messages[data.reason] || data.reason);
