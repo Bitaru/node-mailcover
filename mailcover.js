@@ -46,9 +46,7 @@
     /**
      * Main validation method
      * @param {string} email to validate
-     * @param {object}
-     * @param {function} callback return string if email is incorrect
-     * @return {bool}
+     * @param {string} callback
      */
     mailcover.validate = function(email, callback){
 

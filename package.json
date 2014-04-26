@@ -5,7 +5,7 @@
     "keywords": [
         "email", "validation", "dea"
     ],
-    "author": "Mailcover <web@mailcover.com>",
+    "author": "Bitaru <aiir.diir@gmail.com>",
     "main": "mailcover.js",
     "bugs": {
         "url": "http://github.com/bitaru/node-mailcover/issues"
