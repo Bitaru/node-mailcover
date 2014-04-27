@@ -1,7 +1,7 @@
 {
   "name": "mailcover",
   "description": "Email validation via Mailcover API",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "homepage": "https://Mailcover.com/",
   "keywords": [
     "email",
